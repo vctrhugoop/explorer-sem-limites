@@ -1,2 +1,31 @@
 @use 'variables';
 @use 'mixin';
+
+main {
+  @include mixin.bg-gradient;
+  @include mixin.d-flex;
+  row-gap: 5rem;
+  width: 100vw;
+  padding: 5.2rem 3.2rem;
+
+  .card {
+    background-color: variables.$bg-color-secondary;
+    border-radius: 2rem;
+    padding: 2.6rem;
+
+    h1 {
+      color: variables.$color-primary;
+      font-family: Mulish;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 3.3rem 0 1.9rem;
+    }
+
+    p {
+      color: variables.$color-secondary;
+      font-family: Mulish;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}

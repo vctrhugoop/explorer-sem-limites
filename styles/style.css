@@ -60,4 +60,32 @@ header .hero .arrow-down {
 header .hero .arrow-down i {
   color: #b52184;
   font-size: 5rem;
+}
+
+main {
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5rem;
+  width: 100vw;
+  padding: 5.2rem 3.2rem;
+}
+main .card {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 2.6rem;
+}
+main .card h1 {
+  color: #b52184;
+  font-family: Mulish;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 3.3rem 0 1.9rem;
+}
+main .card p {
+  color: #312d64;
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
