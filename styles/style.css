@@ -110,6 +110,7 @@ header .hero-container .arrow-down {
   height: 10.5rem;
   border: 0.3rem solid #b52184;
   border-radius: 4rem;
+  cursor: pointer;
 }
 header .hero-container .arrow-down i {
   font-size: 4rem;
@@ -256,6 +257,7 @@ main .card-container .card-wrapper .card p {
   padding: 1.6rem;
   color: #ffffff;
   border-radius: 1.6rem;
+  cursor: pointer;
   --delay: 1s;
   animation: footer 0.4s var(--delay) backwards;
 }

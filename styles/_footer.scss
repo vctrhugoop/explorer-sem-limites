@@ -65,6 +65,7 @@
         color: variables.$bg-color-secondary;
         border-radius: 1.6rem;
 
+        cursor: pointer;
         --delay: 1s;
         animation: footer 0.4s var(--delay) backwards;
       }
