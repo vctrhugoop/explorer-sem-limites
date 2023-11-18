@@ -17,3 +17,15 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: variables.$color-secondary;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}

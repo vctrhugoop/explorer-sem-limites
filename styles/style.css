@@ -17,6 +17,25 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+input::-moz-placeholder, button::-moz-placeholder, textarea::-moz-placeholder {
+  color: #312d64;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+input::placeholder,
+button::placeholder,
+textarea::placeholder {
+  color: #312d64;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 header {
   width: 100vw;
   height: 67.9rem;
@@ -87,5 +106,71 @@ main .card p {
   color: #312d64;
   font-family: Mulish;
   font-size: 1.6rem;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6.5rem;
+  width: 100vw;
+  background-color: #f9f4fb;
+}
+footer form {
+  padding: 7.8rem 3.2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+footer form h1 {
+  color: #b52184;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 4.2rem;
+}
+footer form .form-wrapper {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+footer form .form-wrapper input,
+footer form .form-wrapper textarea {
+  width: 31rem;
+  border-radius: 1.6rem;
+  background-color: transparent;
+  border: 1px solid #312d64;
+  padding: 1.4rem 1.4rem 1.4rem 4.2rem;
+}
+footer form .form-wrapper textarea {
+  height: 10rem;
+}
+footer form .form-wrapper i {
+  font-size: 2.4rem;
+  color: #b52184;
+  position: absolute;
+  left: 1rem;
+  top: 1.1rem;
+}
+footer form button {
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+  color: #ffffff;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
+footer .copyright {
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7.8rem;
+  padding: 1.6rem;
+}
+footer .copyright span {
+  color: #ffffff;
+  font-size: 1.9rem;
   font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
