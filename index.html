@@ -73,14 +73,32 @@
       </div>
     </main>
     <footer>
-      <h1>Entre em contato</h1>
       <form>
-        <label for="name"></label>
-        <input type="text" name="name" id="name" placeholder="Seu nome" />
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="Seu e-mail" />
-        <label for="msg"></label>
-        <textarea name="msg" id="msg"></textarea>
+        <h1>Entre em contato</h1>
+        <div class="form-wrapper">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Seu nome" />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="form-wrapper">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+          />
+          <i class="fa-solid fa-at"></i>
+        </div>
+        <div class="form-wrapper">
+          <label for="msg"></label>
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="Digite sua mensagem aqui..."
+          ></textarea>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
         <button>Enviar mensagem</button>
       </form>
       <div class="copyright">
