@@ -38,8 +38,7 @@ textarea::placeholder {
 
 header {
   width: 100vw;
-  height: 67.9rem;
-  padding: 0 3.2rem;
+  padding: 0 3.2rem 9.3rem;
   background-color: #f9f4fb;
 }
 header .hero {
