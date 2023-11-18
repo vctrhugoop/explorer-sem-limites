@@ -1,0 +1,15 @@
+@use 'variables';
+
+@mixin bg-gradient {
+  background: linear-gradient(
+    96deg,
+    variables.$color-tertiary 0%,
+    variables.$color-secondary 99.68%
+  );
+}
+
+@mixin d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
