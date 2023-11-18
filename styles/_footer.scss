@@ -1,2 +1,89 @@
 @use 'variables';
 @use 'mixin';
+
+.form-container {
+  background-color: variables.$bg-color-primary;
+  width: 100%;
+  padding: 7.8rem 3.2rem 6.5rem;
+
+  .wrapper {
+    max-width: 1224px;
+    width: 100%;
+    form {
+      max-width: 56rem;
+      width: 100%;
+      margin: 0 auto;
+      h1 {
+        color: variables.$color-primary;
+
+        font-weight: 900;
+        font-size: clamp(2rem, 3.084vw + 1.277rem, 5.563rem);
+        line-height: clamp(3rem, 3.25vw + 2.238rem, 4.713rem);
+
+        margin-bottom: 4.3rem;
+      }
+      .form-wrapper {
+        @include mixin.d-flex;
+        align-items: flex-start;
+        position: relative;
+
+        input,
+        textarea {
+          width: 100%;
+          background-color: transparent !important;
+          border-radius: 1.6rem;
+          border: 1.5px solid variables.$color-secondary;
+          margin-bottom: 2.4rem;
+        }
+
+        input {
+          padding: 1.2rem 1.2rem 1.2rem 4rem;
+        }
+
+        textarea {
+          padding: 1.2rem;
+          height: 10rem;
+        }
+
+        i {
+          position: absolute !important;
+          color: variables.$color-primary;
+          font-size: 2rem;
+          top: 10px;
+          left: 12px;
+        }
+      }
+
+      button {
+        @include mixin.bg-gradient;
+        padding: 1.6rem;
+        color: variables.$bg-color-secondary;
+        border-radius: 1.6rem;
+      }
+      @media screen and (min-width: 1100px) {
+        margin: 0;
+      }
+    }
+
+    @media screen and (min-width: 1100px) {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    background-image: url(../assets/imageBgFooter.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+}
+
+footer {
+  @include mixin.bg-gradient;
+  text-align: center;
+  color: variables.$bg-color-secondary;
+  font-size: 1.91rem;
+  font-weight: 600;
+  height: 6rem;
+  padding: 1.6rem;
+}
