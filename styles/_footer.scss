@@ -21,6 +21,9 @@
         line-height: clamp(3rem, 3.25vw + 2.238rem, 4.713rem);
 
         margin-bottom: 4.3rem;
+
+        --delay: 0.2s;
+        animation: footer 0.4s var(--delay) backwards;
       }
       .form-wrapper {
         @include mixin.d-flex;
@@ -52,6 +55,8 @@
           top: 10px;
           left: 12px;
         }
+        --delay: 0.4s;
+        animation: footer 0.4s var(--delay) backwards;
       }
 
       button {
@@ -59,6 +64,9 @@
         padding: 1.6rem;
         color: variables.$bg-color-secondary;
         border-radius: 1.6rem;
+
+        --delay: 1s;
+        animation: footer 0.4s var(--delay) backwards;
       }
       @media screen and (min-width: 1100px) {
         margin: 0;
@@ -86,4 +94,11 @@ footer {
   font-weight: 600;
   height: 6rem;
   padding: 1.6rem;
+}
+
+@keyframes footer {
+  from {
+    opacity: 0;
+    transform: translatex(-200%);
+  }
 }

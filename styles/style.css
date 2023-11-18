@@ -53,6 +53,7 @@ header .hero-container {
   margin: 0 auto;
 }
 header .hero-container img {
+  animation: header 1s forwards;
   max-width: 36.4rem;
   width: 100%;
 }
@@ -73,6 +74,7 @@ header .hero-container .wrapper {
   }
 }
 header .hero-container .wrapper .text {
+  animation: header 1s forwards;
   margin: 1.7rem 0 3.5rem;
   text-align: center;
 }
@@ -102,6 +104,7 @@ header .hero-container .arrow-down {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: header 1s forwards;
   justify-content: center;
   width: 5.8rem;
   height: 10.5rem;
@@ -129,6 +132,12 @@ header .hero-container .arrow-down i {
   }
 }
 
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+}
 main .card-container {
   background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
   padding: 5.2rem 3.2rem;
@@ -144,6 +153,8 @@ main .card-container .card-wrapper {
   margin: 0 auto;
 }
 main .card-container .card-wrapper .card {
+  --delay: 0.4s;
+  animation: main 0.4s var(--delay) backwards;
   width: 30rem;
   padding: 2.6rem;
   background-color: #ffffff;
@@ -177,6 +188,15 @@ main .card-container .card-wrapper .card p {
   }
 }
 
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .form-container {
   background-color: #f9f4fb;
   width: 100%;
@@ -197,6 +217,8 @@ main .card-container .card-wrapper .card p {
   font-size: clamp(2rem, 3.084vw + 1.277rem, 5.563rem);
   line-height: clamp(3rem, 3.25vw + 2.238rem, 4.713rem);
   margin-bottom: 4.3rem;
+  --delay: 0.2s;
+  animation: footer 0.4s var(--delay) backwards;
 }
 .form-container .wrapper form .form-wrapper {
   display: flex;
@@ -204,6 +226,8 @@ main .card-container .card-wrapper .card p {
   align-items: center;
   align-items: flex-start;
   position: relative;
+  --delay: 0.4s;
+  animation: footer 0.4s var(--delay) backwards;
 }
 .form-container .wrapper form .form-wrapper input,
 .form-container .wrapper form .form-wrapper textarea {
@@ -232,6 +256,8 @@ main .card-container .card-wrapper .card p {
   padding: 1.6rem;
   color: #ffffff;
   border-radius: 1.6rem;
+  --delay: 1s;
+  animation: footer 0.4s var(--delay) backwards;
 }
 @media screen and (min-width: 1100px) {
   .form-container .wrapper form {
@@ -260,4 +286,11 @@ footer {
   font-weight: 600;
   height: 6rem;
   padding: 1.6rem;
+}
+
+@keyframes footer {
+  from {
+    opacity: 0;
+    transform: translatex(-200%);
+  }
 }/*# sourceMappingURL=style.css.map */
