@@ -1,1 +1,63 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Mulish", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  width: 100vw;
+  height: 67.9rem;
+  padding: 0 3.2rem;
+  background-color: #f9f4fb;
+}
+header .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .hero img {
+  width: 100%;
+}
+header .hero .hero-text {
+  margin: 1.7rem 0 3.5rem;
+}
+header .hero .hero-text h1 {
+  color: #b52184;
+  font-family: Mulish;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+header .hero .hero-text p {
+  color: #312d64;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .hero .arrow-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5.8rem;
+  height: 10.5rem;
+  background-color: transparent !important;
+  border-radius: 4rem;
+  border: 0.4rem solid #b52184;
+}
+header .hero .arrow-down i {
+  color: #b52184;
+  font-size: 5rem;
+}/*# sourceMappingURL=style.css.map */
