@@ -1,2 +1,88 @@
 @use 'variables';
 @use 'mixin';
+
+header {
+  background-color: variables.$bg-color-primary;
+
+  padding: 0 3.2rem 9.3rem;
+
+  .hero-container {
+    @include mixin.d-flex;
+
+    max-width: 1224px;
+    margin: 0 auto;
+
+    img {
+      max-width: 36.4rem;
+      width: 100%;
+
+      @media screen and (min-width: 1024px) {
+        max-width: 70rem;
+        width: 50%;
+      }
+    }
+    .wrapper {
+      @include mixin.d-flex;
+
+      @media screen and (min-width: 768px) {
+        align-items: flex-start;
+      }
+
+      .text {
+        margin: 1.7rem 0 3.5rem;
+        text-align: center;
+
+        h1 {
+          color: variables.$color-primary;
+
+          font-weight: 900;
+          font-size: clamp(2rem, 3.084vw + 1.277rem, 5.563rem);
+          line-height: clamp(3rem, 3.25vw + 2.238rem, 4.713rem);
+        }
+
+        p {
+          color: variables.$color-secondary;
+          font-size: clamp(1.25rem, 1.423vw + 0.916rem, 3.2rem);
+          line-height: clamp(1.875rem, 1.376vw + 1.552rem, 2.6rem);
+          font-weight: 600;
+        }
+
+        @media screen and (min-width: 768px) {
+          @include mixin.d-flex;
+          text-align: left;
+          align-items: flex-start;
+          gap: 0.8rem;
+        }
+      }
+    }
+    .arrow-down {
+      @include mixin.d-flex;
+      justify-content: center;
+
+      width: 5.8rem;
+      height: 10.5rem;
+
+      border: 0.3rem solid variables.$color-primary;
+      border-radius: 4rem;
+
+      i {
+        font-size: 4rem;
+        color: variables.$color-primary;
+      }
+
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      position: relative;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 2.8rem;
+    }
+  }
+}
