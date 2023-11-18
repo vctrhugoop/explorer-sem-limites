@@ -111,6 +111,7 @@ main {
   padding: 5.2rem 3.2rem;
 }
 main .card {
+  width: 30rem;
   background-color: #ffffff;
   border-radius: 2rem;
   padding: 2.6rem;
