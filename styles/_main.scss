@@ -1,2 +1,45 @@
 @use 'variables';
 @use 'mixin';
+
+main {
+  .card-container {
+    @include mixin.bg-gradient;
+    padding: 5.2rem 3.2rem;
+
+    .card-wrapper {
+      @include mixin.d-flex;
+      justify-content: center;
+      gap: 5rem;
+      max-width: 1224px;
+      width: 100%;
+      margin: 0 auto;
+
+      .card {
+        width: 30rem;
+        padding: 2.6rem;
+        background-color: variables.$bg-color-secondary;
+        border-radius: 1.6rem;
+
+        h1 {
+          color: variables.$color-primary;
+          font-size: 2.8rem;
+          font-weight: 900;
+          margin: 3.3rem 0 1.9rem;
+        }
+
+        p {
+          color: variables.$color-secondary;
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+        @media screen and (min-width: 768px) {
+          height: 40rem;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
